@@ -3,17 +3,17 @@ const npmrc = `@unbiased:registry=https://europe-west2-npm.pkg.dev/unbiased-shar
 
 const yarnrc = `defaultSemverRangePrefix: ""
 
-  nodeLinker: node-modules
+nodeLinker: node-modules
 
-  npmScopes:
-    unbiased:
-      npmAlwaysAuth: true
-      npmAuthToken: TOKEN
-      npmRegistryServer: "https://europe-west2-npm.pkg.dev/unbiased-shared/unbiased-npm/"
+npmScopes:
+  unbiased:
+    npmAlwaysAuth: true
+    npmAuthToken: TOKEN
+    npmRegistryServer: "https://europe-west2-npm.pkg.dev/unbiased-shared/unbiased-npm/"
 
-  plugins:
-    - path: .yarn/plugins/@yarnpkg/plugin-interactive-tools.cjs
-  spec: "@yarnpkg/plugin-interactive-tools"`;
+plugins:
+  - path: .yarn/plugins/@yarnpkg/plugin-interactive-tools.cjs
+    spec: "@yarnpkg/plugin-interactive-tools"`;
 
 export {
   npmrc,
