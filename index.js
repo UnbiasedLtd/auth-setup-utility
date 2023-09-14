@@ -46,7 +46,7 @@ function execCommand(command, errorMessage) {
   try {
     execSync(command, { stdio: 'inherit' });
   } catch (e) {
-    throw new Error(`${errorMessage}: ${e}`);
+    console.warn(`${errorMessage}: ${e}`);
   }
 }
 
